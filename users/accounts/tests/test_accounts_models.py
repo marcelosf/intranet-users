@@ -73,6 +73,6 @@ class UserModelTest(TestCase):
 
     def make_user(self, **kwargs):
         default = dict(login='4444444', main_email='main@test.com', password='92874',
-                       name='Marc Stold Further', type='I ')
+                       name='Marc Stold Further', user_type='I ')
         data = dict(default, **kwargs)
         return UserModel.objects.create_user(**data)

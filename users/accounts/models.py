@@ -24,7 +24,7 @@ class UserModel(AbstractBaseUser, PermissionsMixin):
     date_joined = models.DateTimeField(_("Joined at"), auto_now_add=True)
 
     USERNAME_FIELD = 'login'
-    REQUIRED_FIELDS = ['name', 'type', 'main_email']
+    REQUIRED_FIELDS = ['name', 'user_type', 'main_email']
     EMAIL_FIELD = 'main_email'
     ALLOWED_UNIDADES = settings.ALLOWED_UNIDADES
 
